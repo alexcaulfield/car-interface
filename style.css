@@ -1,0 +1,17 @@
+.main {
+	float: left;
+	display: inline-block;
+	margin-left: 150px;
+}
+
+#map {
+	height: 400px;
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+#origin, #destination {
+	display: block;
+	margin: 0 auto;
+}
