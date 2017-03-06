@@ -20,8 +20,8 @@
 	<br />
 	<div class="slider">
 	<h1>Temperature</h1>
-	<input type="range" min="0" max="8" value="4" onchange="showTemp(this.value)" />
-	<center><span id="temp">4</span></center>
+	<input type="range" min="60" max="80" value="70" onchange="showTemp(this.value)" />
+	<center><span id="temp">69</span></center>
 	<script type="text/javascript">
 		function showTemp(newValue){
 			document.getElementById("temp").innerHTML=newValue;
