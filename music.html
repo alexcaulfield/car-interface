@@ -11,17 +11,39 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<p>
+	  <a href="main.html"><button type="button" class="	btn btn-default btn-sm">MENU</button></a>
+	</p>
+	<br />
 
 <div class="media">
 
-	<div class="spotify">
-		<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A3oAhVve3NUD2lf3IUH9Yzh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	</div>
+	<div id="spotify" onclick="addSpotifyPlayer()"></div>
 
-	<div class="radio">
-		<iframe style="border: 0px #FFFFFF none;" src="https://www.partyviberadio.com/player/embed-dark-auto/reggae.html" name="embed-dark" width="200px" height="80px" frameborder="1" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>
-	</div>
+	<div id="radio" onclick="addRadio()"></div>
 
 </div>
+
+<script type="">
+	var spotify = document.getElementById("spotify");
+	var radio = document.getElementById("radio");
+
+	spotify.innerHTML = '<button type="button" style="background-color: white;"><img src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/072015/spotify_2015.png?itok=1MxXaGSs"/></button>';
+
+	radio.innerHTML = '<button type="button" style="background-color: white;"><img src="http://www.iconninja.com/files/219/801/270/radio-icon.png"/></button>';
+
+	function addSpotifyPlayer() {
+		spotify.innerHTML = '<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A3oAhVve3NUD2lf3IUH9Yzh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
+		radio.innerHTML = '<button type="button" style="background-color: white;"><img src="http://www.iconninja.com/files/219/801/270/radio-icon.png"/></button>';
+	}
+
+	function addRadio() {
+		radio.innerHTML = '<iframe style="border: 0px #FFFFFF none;" src="https://www.partyviberadio.com/player/embed-dark-auto/pop.html" name="embed-dark" width="300px" height="120px" frameborder="1" marginwidth="0px" marginheight="0px" scrolling="no"></iframe>';
+		spotify.innerHTML = '<button type="button" style="background-color: white;"><img src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/072015/spotify_2015.png?itok=1MxXaGSs"/></button>';
+	}
+	//<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A3oAhVve3NUD2lf3IUH9Yzh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+</script>
+
 </body>
 </html>
