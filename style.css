@@ -16,6 +16,14 @@
 	margin: 0 auto;
 }
 
-#fan, #temp {
+#temp {
 	font-size: 36px;
+}
+
+#fan {
+	font-size: 45px;
+}
+
+table{
+	font-size: 24px;
 }

@@ -36,10 +36,27 @@
 
 	<h1>Fan</h1>
 	<input type="range" min="0" max="5" value="0" onchange="showValue(this.value)" />
-	<center><span id="fan">0</span></center>
+	<center><span id="fan"><img src="fan-icon.png" width="75px" /></span></center>
 	<script>
 		function showValue(newValue){
-			document.getElementById("fan").innerHTML=newValue;
+			if (newValue == 0){
+				document.getElementById("fan").innerHTML='<p><img src="fan-icon.png" width="75px" /></p>';
+			}
+			if (newValue == 1){
+				document.getElementById("fan").innerHTML='<p><img src="fan-icon.png" width="75px" />)</p>'
+			}
+			if (newValue == 2){
+				document.getElementById("fan").innerHTML='<p><img src="fan-icon.png" width="75px" />))</p>'
+			}
+			if (newValue == 3){
+				document.getElementById("fan").innerHTML='<p><img src="fan-icon.png" width="75px" />)))</p>'
+			}
+			if (newValue == 4){
+				document.getElementById("fan").innerHTML='<p><img src="fan-icon.png" width="75px" />))))</p>'
+			}
+			if (newValue == 5){
+				document.getElementById("fan").innerHTML='<p><img src="fan-icon.png" width="75px"/>)))))</p>'
+			}
 		}
 	</script>
 </body>
