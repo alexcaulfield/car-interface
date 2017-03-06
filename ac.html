@@ -18,6 +18,7 @@
 	  <a href="main.html"><button type="button" class="	btn btn-default btn-sm">MENU</button></a>
 	</p>
 	<br />
+	<div class="slider">
 	<h1>Temperature</h1>
 	<input type="range" min="0" max="8" value="4" onchange="showTemp(this.value)" />
 	<center><span id="temp">4</span></center>
@@ -26,6 +27,7 @@
 			document.getElementById("temp").innerHTML=newValue;
 		}
 	</script>
+	</div>
 
 	<br />
 	<br />
@@ -34,6 +36,7 @@
 	<br />
 	<br />
 
+	<div class="slider">
 	<h1>Fan</h1>
 	<input type="range" min="0" max="5" value="0" onchange="showValue(this.value)" />
 	<center><span id="fan"><img src="fan-icon.png" width="75px" /></span></center>
@@ -59,5 +62,6 @@
 			}
 		}
 	</script>
+	</div>
 </body>
 </html>

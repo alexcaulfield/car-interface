@@ -51,7 +51,6 @@ function route() {
     origin:start,
     destination:end,
     waypoints:waypointArray,
-    //optimizeWaypoints: true,
     travelMode: google.maps.TravelMode.DRIVING
   };
   directionsService.route(request, function(result, status) {
