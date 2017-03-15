@@ -10,13 +10,19 @@
 </head>
 <body>
 <p>
-  <a href="main.html"><button type="button" class="btn btn-default btn-md">MENU</button></a>
+<p>
+  <a href="main.html"><button type="button" class="btn btn-default btn-lg">MENU</button></a>
 </p>
 <br/>
 <input type="text" id="origin" placeholder="ORIGIN" onchange="route()">
 <input type="text" id="destination" placeholder="DESTINATION" onchange="route()">
 <br/>
+<center><button type="button" class="btn btn-default btn-lg" onclick="route()">CREATE ROUTE</button></center>
+<br/>
 <div id="map"></div>
+
+<br />
+<center><div id="addstop"><button type="button" class="btn btn-default btn-lg" onclick="addStop()">ADD A STOP</button></div></center>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript">
@@ -26,7 +32,7 @@ var map;
 
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
-  var boston = new google.maps.LatLng(42.3601,-71.0589);
+  var boston = new google.maps.LatLng(42.3601,-71.0589); // change to current location?
   var mapOptions = {
     zoom: 8,
     center: boston
@@ -37,7 +43,7 @@ function initialize() {
 
 var waypointArray = [];
 
-function route() {
+function route() { // change to jQuery?
   var start = document.getElementById("origin").value;
   var end = document.getElementById("destination").value;
   if (document.getElementById("stop") != null){
@@ -55,6 +61,7 @@ function route() {
   };
   directionsService.route(request, function(result, status) {
     if (status == google.maps.DirectionsStatus.OK) {
+      //console.log(result); DO WE WANT TO PRINT THE ADDRESSES?
       directionsDisplay.setDirections(result);
     }
   });
@@ -65,8 +72,5 @@ function addStop(){
   addstop.innerHTML = '<input type="text" id="stop" placeholder="NEW STOP" onchange="route()">'
 }
 </script>
-<br />
-<center><div id="addstop"><button type="button" class="btn btn-default btn-lg" onclick="addStop()">ADD A STOP</button></div></center>
-
 </body>
 </html>
