@@ -22,29 +22,50 @@
 <br/>
 <br/>
 
-<table border="0">
+<table id="carStatus" border="0">
 	<tbody>
 		<tr valign="top">
-			<td style="padding:15px; vertical-align:top">
+			<td style="padding:15px; vertical-align:top; text-align:right">
 			<p>Distance Until Empty:</p></td>
 			<td style="padding:15px; vertical-align:top">
 			<p>11 miles</p></td>
 		</tr>
 		<tr valign="top">
-			<td style="padding: 15px; vertical-align:top">
+			<td style="padding:15px; vertical-align:top; text-align:right">
 			<p>Fuel Efficiency:</p></td>
 			<td style="padding:15px; vertical-align:top">
 			<p>30 Miles per Gallon</p></td>
 		</tr>
 		<tr valign="top">
-			<td style="padding:15px; vertical-align:top">
+			<td style="padding:15px; vertical-align:top; text-align:right">
 			<p>Outside Temp:</p></td>
 			<td style="padding:15px; vertical-align:top">
 			<p>70&deg; F</p></td>
 		</tr>
+		<tr valign="top">
+			<td style="padding:15px; vertical-align:top; text-align:right">
+			<p>Odometer:</p></td>
+			<td style="padding:15px; vertical-align:top">
+			<p>1128 miles</p></td>
+		</tr>
+		<tr valign="top">
+			<td style="padding:15px; vertical-align:top; text-align:right">
+			<p>Current trip:</p></td>
+			<td style="padding:15px; vertical-align:top">
+			<p id="curr-dist">68 miles</p></td>
+		</tr>
+		<tr valign="top">
+			<td style="padding:15px; vertical-align:top; text-align:right"></td>
+			<td style="padding:15px; vertical-align:top">
+			<button type="button" class="btn btn-default btn-sm" onclick="reset()" float="right">RESET TRIP</button>
 	</tbody>
 </table>
 
+<script type="text/javascript">
+function reset(){
+	document.getElementById("curr-dist").innerHTML = "0 miles";
+}
+</script>
 </body>
 
 </html>
