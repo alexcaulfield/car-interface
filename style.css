@@ -1,3 +1,6 @@
+body{
+	background-color: #111111;
+}
 .main {
 	float: left;
 	display: inline-block;
