@@ -49,6 +49,18 @@ table{
 	width:100%;
 }
 
+.logo {
+	height: 200px;
+	width: 190px;
+	padding-bottom: 20px;
+}
+
+.tiny-logo {
+	width: 60px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;;
+}
+
 .img {
 	height: 200px;
 	width: 200px;
