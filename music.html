@@ -28,20 +28,19 @@
 	var spotify = document.getElementById("spotify");
 	var radio = document.getElementById("radio");
 
-	spotify.innerHTML = '<button type="button" style="background-color: white;"><img src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/072015/spotify_2015.png?itok=1MxXaGSs"/></button>';
+	spotify.innerHTML = '<button type="button" class="btn btn-default btn-lg main"><figure><img src="https://image.flaticon.com/icons/png/512/49/49097.png" class="logo"/><figcaption>SPOTIFY</figcaption></figure></button>';
 
-	radio.innerHTML = '<button type="button" style="background-color: white;"><img src="http://www.iconninja.com/files/219/801/270/radio-icon.png"/></button>';
+	radio.innerHTML = '<button type="button" class="btn btn-default btn-lg main"><figure><img src="https://cdn1.iconfinder.com/data/icons/social-productivity-line-art-4/128/broadcast-512.png" class="logo"/><figcaption>RADIO</figcaption></figure></button>';
 
 	function addSpotifyPlayer() {
 		spotify.innerHTML = '<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A3oAhVve3NUD2lf3IUH9Yzh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
-		radio.innerHTML = '<button type="button" style="background-color: white;"><img src="http://www.iconninja.com/files/219/801/270/radio-icon.png"/></button>';
+		radio.innerHTML = '<button type="button" class="btn btn-default btn-lg main"><figure><img src="https://cdn1.iconfinder.com/data/icons/social-productivity-line-art-4/128/broadcast-512.png" class="logo"/><figcaption>RADIO</figcaption></figure></button>';
 	}
 
 	function addRadio() {
 		radio.innerHTML = '<audio src="http://new-webstream.wmfo.org/;" controls></audio>';
-		spotify.innerHTML = '<button type="button" style="background-color: white;"><img src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/072015/spotify_2015.png?itok=1MxXaGSs"/></button>';
+		spotify.innerHTML = '<button type="button" class="btn btn-default btn-lg main"><figure><img src="https://image.flaticon.com/icons/png/512/49/49097.png" class="logo"/><figcaption>SPOTIFY</figcaption></figure></button>';
 	}
-	//<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A3oAhVve3NUD2lf3IUH9Yzh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
 </script>
 
