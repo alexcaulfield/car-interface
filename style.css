@@ -1,6 +1,11 @@
 body{
 	background-color: #111111;
 }
+
+figcaption {
+	color: #b94646;
+}
+
 .main {
 	float: left;
 	display: inline-block;
@@ -47,6 +52,18 @@ table{
 .media {
 	text-align:center;
 	width:100%;
+}
+
+.logo {
+	height: 200px;
+	width: 190px;
+	padding-bottom: 20px;
+}
+
+.tiny-logo {
+	width: 60px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;;
 }
 
 .img {
