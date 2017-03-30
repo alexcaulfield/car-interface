@@ -20,6 +20,11 @@ h1, h3 {
 	font-family: Helvetica;
 }
 
+iframe {
+	float: left;
+	margin-left: 200px;
+}
+
 #map {
 	height: 400px;
 	width: 600px;
